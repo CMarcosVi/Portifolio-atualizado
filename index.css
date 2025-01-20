@@ -272,7 +272,7 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     padding-top: 4rem;
     padding-bottom: 2rem;
-    font-size: 2rem;
+    font-size: 72px;
     color: #fff;
 }
 
@@ -281,8 +281,8 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     flex-direction: column;
     list-style: none;
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
     color: #fff;
     text-align: center;
     padding: .1rem;
@@ -324,6 +324,7 @@ body::-webkit-scrollbar-thumb:hover {
 .expriencias-container{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 70px;
 }
@@ -344,12 +345,15 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: 'Baron';
     text-align: center;
     padding: 4rem;
-    font-size: 2rem;
+    font-size: 72px;
 }
 .projetcsList{
-    width: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px
+    ;
 }
 .ProjetoName{
     margin: .25rem;
@@ -361,19 +365,17 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    height: 400px;
-    width: 100px;
+    justify-content: start;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 300px;
     background-color: #222;
     color: #888;
     font-family: 'Baron';
-    -moz-transform: skew(-17deg, 0deg);
-    -webkit-transform: skew(-17deg, 0deg);
-    -o-transform: skew(-17deg, 0deg);
-    -ms-transform: skew(-17deg, 0deg);
-    transform: skew(-10deg, 0deg);
     transition: 1s;
     cursor: pointer;
+    border: 3px solid #fff;
+    gap: 20px;
 }
 
 .projectClickCarros:hover,
@@ -385,15 +387,19 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .projectClickCarros:hover{
     color: #49009c;
+    border: 3px solid #49009c;
 }
 .projectClickAv:hover {
     color: #fff;
+    border: 3px solid #fff;
 }
 .projectClickProjectB:hover {
     color: #f00;
+    border: 3px solid #f00;
 }
 .projectClickBank:hover {
     color: #0f4;
+    border: 3px solid #0f4;
 }
 
 .projectInfo {
@@ -533,17 +539,13 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 1.2rem;
 }
 .titleProjectsModify{
-    font-size: .8rem;
-    -moz-transform: rotate(100deg) skew(-17deg, 0deg);
-    -webkit-transform: rotate(100deg) skew(-17deg, 0deg);
-    -o-transform: rotate(100deg) skew(-17deg, 0deg);
-    -ms-transform: rotate(100deg) skew(-17deg, 0deg);
-    transform: rotate(270deg) skew(-17deg, 0deg);
+    font-size: 22px;
 }
 .tecnologiasProject{
-    display: flex;
-    flex-direction: column;
-    justify-self: center;   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
 }
 .especificacoes{
     display: flex;
@@ -668,6 +670,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     height: 15px;
     padding: .25rem 1rem;
     background-color: #fff;
@@ -750,7 +753,7 @@ body::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #000;
 }
 .pointer{
@@ -773,9 +776,11 @@ body::-webkit-scrollbar-thumb:hover {
     margin: 2px;
 }
 .listaIdiomas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
 .listaIdiomas > li{
     display: flex;
@@ -786,18 +791,18 @@ body::-webkit-scrollbar-thumb:hover {
     color: #fff;
     text-align: center;
     font-family: 'Baron';
-    font-size: 2rem;
+    font-size: 72px;
 }
 
 .imgsIdiomas{
-    height: 50px;
+    height: 130px;
+    margin: 30px 0;
 }
 .lenguage{
     letter-spacing: 2px;
     font-family: 'Baron';
     color: #fff;
-    font-size: 1rem;
-    padding: 1rem 0rem;
+    font-size:28px;
 }
 .LevelNamelenguage{
     font-size: 1rem;
@@ -809,6 +814,9 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*-----Media-Query-----*/
 @media only screen and (max-width: 840px){
+    #titleArea{
+        font-size: 64px;
+    }
     .imgBCProject div{
         display: flex;
         flex-direction: column;
@@ -819,8 +827,10 @@ body::-webkit-scrollbar-thumb:hover {
         height: 150px;
     }
     .listaIdiomas{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         gap: 50px;
     }
     #Home{
@@ -864,18 +874,21 @@ body::-webkit-scrollbar-thumb:hover {
         padding: 2rem;
     }
     .imagse{
-        height: 30px;
-        width: 30px;
-    }
-    .projectClickCarros,
-    .projectClickAv,
-    .projectClickProjectB,
-    .projectClickBank{
-        width: 75px;
+        height: 50px;
+        width: 50px;
     }
     .titleProjectsModify{
         font-size: .8rem;
     }
+    .secoes,.tituloIdiomas,.titleProjects{
+        font-size: 32px !important;
+    }
+    .imagse{
+        width: 40px !important;
+        height: 40px !important;
+    }
+    .imgsIdiomas{
+        width: 70px !important;
 }
 
 @media only screen and (max-width: 570px){
@@ -889,11 +902,8 @@ body::-webkit-scrollbar-thumb:hover {
         flex-direction: column;
         align-items: center;
     }
-    .projectClickCarros,
-    .projectClickAv,
-    .projectClickProjectB,
-    .projectClickBank{
-        width: 65px;
+    #titleArea{
+        font-size: 42px;
     }
 
 }
@@ -919,12 +929,6 @@ body::-webkit-scrollbar-thumb:hover {
         padding-top: 4rem;
         padding-bottom: 1rem;
         color: #fff;
-    }
-    .projectClickCarros,
-    .projectClickAv,
-    .projectClickProjectB,
-    .projectClickBank{
-        width: 45px;
     }
 }
 /*-----Media-Query-----*/

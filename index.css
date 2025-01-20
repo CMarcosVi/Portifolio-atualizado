@@ -301,11 +301,12 @@ body::-webkit-scrollbar-thumb:hover {
 #Experiencias{
     background-color: #000;
     color: #fff;
-    height: 70vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 90px;
 }
 .titleExperiences{
     font-family: 'Baron';
@@ -330,6 +331,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .list-experience-skills{
     display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
 }
 /*-----Experiences-----*/
 /*-----Projects-----*/
@@ -888,7 +893,7 @@ body::-webkit-scrollbar-thumb:hover {
         height: 40px !important;
     }
     .imgsIdiomas{
-        width: 70px !important;
+        height: 70px !important;
 }
 
 @media only screen and (max-width: 570px){
@@ -914,7 +919,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .habilidadeList{
         display: grid;
-        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(3, 1fr); 
         gap: 2rem 3rem;
         font-size: .5rem;
         align-items: start;

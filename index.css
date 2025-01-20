@@ -260,12 +260,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 /*-----Skills-----*/
 .partq2{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     background-color: #000;
+    padding-bottom: 50px;
 }
 .secoes{
     font-family: 'Baron';
@@ -294,7 +295,6 @@ body::-webkit-scrollbar-thumb:hover {
     grid-template-columns: repeat(8, 1fr); 
     gap: 60px;
     align-items: start;
-    padding: 2rem;
 }
 /*-----Skills-----*/
 /*-----Experiences-----*/
@@ -334,17 +334,18 @@ body::-webkit-scrollbar-thumb:hover {
     flex-wrap: wrap;
     gap: 15px;
     align-items: center;
-    justify-content: center;
 }
 /*-----Experiences-----*/
 /*-----Projects-----*/
 .partq3 {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 50px;
+    position: relative;
 }
 .titleProjects {
     font-family: 'Baron';
@@ -760,6 +761,8 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     min-height: 100vh;
     background-color: #000;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .pointer{
     width: 20px;
@@ -876,7 +879,6 @@ body::-webkit-scrollbar-thumb:hover {
         gap: 3rem;
         font-size: .5rem;
         align-items: start;
-        padding: 2rem;
     }
     .imagse{
         height: 50px;
@@ -894,6 +896,14 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .imgsIdiomas{
         height: 70px !important;
+    }
+    .list-experience-skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
 }
 
 @media only screen and (max-width: 570px){
@@ -919,7 +929,7 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .habilidadeList{
         display: grid;
-        grid-template-columns: repeat(3, 1fr); 
+        grid-template-columns: repeat(4, 1fr); 
         gap: 2rem 3rem;
         font-size: .5rem;
         align-items: start;

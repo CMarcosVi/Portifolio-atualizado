@@ -324,16 +324,18 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .expriencias-container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
     gap: 70px;
 }
 .list-experience-skills{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 15px;
     align-items: center;
+    justify-content: flex-start;
+    justify-items: center;
 }
 /*-----Experiences-----*/
 /*-----Projects-----*/

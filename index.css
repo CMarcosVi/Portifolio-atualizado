@@ -282,13 +282,17 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     flex-direction: column;
     list-style: none;
-    height: 50px;
+    height: 75px;
     width: 50px;
     color: #fff;
     text-align: center;
     padding: .1rem;
     font-size: .6rem;
     font-family: 'Roboto', sans-serif;
+}
+.imagse > img{
+    height: 50px !important;
+    width: 50px !important;
 }
 .habilidadeList{
     display: grid;
@@ -336,6 +340,10 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     justify-content: flex-start;
     justify-items: center;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #111;
 }
 /*-----Experiences-----*/
 /*-----Projects-----*/
@@ -877,14 +885,18 @@ body::-webkit-scrollbar-thumb:hover {
     }
     .habilidadeList{
         display: grid;
-        grid-template-columns: repeat(5, 1fr); 
-        gap: 3rem;
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 20px;
         font-size: .5rem;
         align-items: start;
     }
     .imagse{
-        height: 50px;
+        height: 70px !important;
         width: 50px;
+    }
+    .imagse > img{
+        height: 50px !important;
+        width: 50px !important;
     }
     .titleProjectsModify{
         font-size: .8rem;
@@ -892,9 +904,9 @@ body::-webkit-scrollbar-thumb:hover {
     .secoes,.tituloIdiomas,.titleProjects{
         font-size: 32px !important;
     }
-    .imagse{
-        width: 40px !important;
+    .imagse > img{
         height: 40px !important;
+        width: 40px !important;
     }
     .imgsIdiomas{
         height: 70px !important;
@@ -932,12 +944,12 @@ body::-webkit-scrollbar-thumb:hover {
     .habilidadeList{
         display: grid;
         grid-template-columns: repeat(4, 1fr); 
-        gap: 2rem 3rem;
+        gap:0px 55px;
         font-size: .5rem;
         align-items: start;
     }
     .imagse{
-        height: 30px;
+        height: 50px;
         width: 30px;
     }
     .secoes{
